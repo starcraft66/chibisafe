@@ -1,16 +1,41 @@
 # Packages
 node_modules/
-dist/
-.nuxt/
-logs/
-# Chibisafe specifics
+packages/backend/node_modules/
+packages/frontend/node_modules/
+
+# Build artifacts
+packages/backend/dist/
+packages/frontend/dist/
+
+# Env files
+packages/backend/.env
+
+# Database
 database.sqlite
-uploads/
-.env
-!src/api/routes/uploads
-db
 database.sqlite-journal
-docker/nginx/chibisafe.moe.conf
-docker-compose.config.yml
-/coverage
-local/
+
+# Log files
+npm-debug.log*
+
+# chibisafe generated files
+uploads/
+database/
+logs/
+
+.env
+
+# yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+.turbo
+
+/docker-compose.yml
+chibisafe.moe.conf
+.idea/
+minio/
